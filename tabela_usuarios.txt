@@ -1,0 +1,28 @@
+
+  CREATE TABLE USUARIOS (
+    CPF             CHAR(11)   NOT NULL,  -- CPF do cliente, chave primária
+    CODIGO_CLI      CHAR(5)    NOT NULL,  
+    NOME            VARCHAR(40) NOT NULL, 
+    SITUACAO        CHAR(4),              
+    DATA_NASC       CHAR(6),              
+    NATURALIDADE    VARCHAR(15),          
+    ESTADO_CI       VARCHAR(10),          
+    PAI             VARCHAR(40),          
+    MAE             VARCHAR(40),          
+    IDENTIDADE      CHAR(10),             
+    RUA             VARCHAR(20),          
+    NUM             INT,                  
+    BAIRRO          VARCHAR(15),          
+    CIDADE          VARCHAR(15),          
+    CEP             CHAR(8),              
+    FONE            CHAR(7),              
+    DATA_INSC       CHAR(6),              
+    AUTORIZA        VARCHAR(15),          
+    OBSERVACAO      VARCHAR(15),          
+    LIMITE          INT,                  
+    TOT_COMPRADO    DECIMAL(7, 2),        
+    PRIMARY KEY (CPF)                     -- Definindo CPF como chave primária
+);
+
+
+
